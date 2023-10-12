@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="register">Create a New Account</h1>
+
+        <div id="registrationMessage"></div>
+
+        <form id="RegisterForm" action="app/register.php" method="POST">
+
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <div id="EmailError"></div>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input class="submit-button" type="submit" value="Register" id="RegisterButton"> <!-- Added id="RegisterButton" -->
+
+        </form>
+    </div>
+
+    <p class="register-button">Already have an account? <button type="button" onclick="location.href='login.html'">Login here</button>.</p>
+
+    <script src="js/check_email.js"></script>
+    <script src="js/register.js"></script>
+    
+</body>
+</html>

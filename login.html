@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>still working on it...</h1>
+    <li>gotta get login working. . .</li>
+    <li>gotta make sure the survey is working</li>
+
+    <div class="container">
+
+    <h1 class="login">Login</h1>
+
+    <form id="LoginForm" action="app/login.php" method="post">
+
+        <label for="email">Email:</label><br><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label><br><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input class="login-button" type="submit" value="Login">
+    </form>
+
+    </div>
+
+    <div id="LoginResults"></div>
+
+    <p class="register-button">Don't have an account? <button type="button" onclick="location.href='register.html'">Create one here</button>.</p>
+
+    <script src="js/login_script.js"></script>
+
+</body>
+</html>

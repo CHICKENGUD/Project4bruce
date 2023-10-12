@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Survey</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="SurveyForm">
+
+        <label>Would you rather:</label><br>
+        <input type="radio" id="SurveyChicken" name="SurveyChoice" value="chicken" required>
+        <label for="SurveyChicken">Chicken</label><br>
+        
+        <input type="radio" id="SurveyBeef" name="SurveyChoice" value="beef" required>
+        <label for="SurveyBeef">Beef</label><br><br>
+
+        <label for="SurveyComment">Comment:</label><br>
+        <textarea id="SurveyComment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+        <div id="SurveyResultsContainer">
+        <div id="SurveyResults"></div>
+    </div>
+
+    <div id="SurveyResults"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
